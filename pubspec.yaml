@@ -3,6 +3,7 @@ description: "Custom TabBar indicator with a fixed-width underline for consisten
 version: 1.0.0
 homepage: https://github.com/Matkurban/fixed_width_underline_tab_indicator
 repository: https://github.com/Matkurban/fixed_width_underline_tab_indicator
+topics: [widget, tabbar, indicator, flutter]
 
 environment:
   sdk: ^3.10.1
