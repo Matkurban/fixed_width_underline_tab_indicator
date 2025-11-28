@@ -1,7 +1,8 @@
 name: fixed_width_underline_tab_indicator
 description: "Custom TabBar indicator with a fixed-width underline for consistent emphasis."
 version: 1.0.0
-homepage:
+homepage: https://github.com/Matkurban/fixed_width_underline_tab_indicator
+repository: https://github.com/Matkurban/fixed_width_underline_tab_indicator
 
 environment:
   sdk: ^3.10.1
