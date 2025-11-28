@@ -21,7 +21,8 @@ class FixedWidthUnderlineTabIndicator extends Decoration {
 }
 
 class _FixedWidthUnderlinePainter extends BoxPainter {
-  _FixedWidthUnderlinePainter(this.decoration, VoidCallback? onChanged) : super(onChanged);
+  _FixedWidthUnderlinePainter(this.decoration, VoidCallback? onChanged)
+    : super(onChanged);
 
   final FixedWidthUnderlineTabIndicator decoration;
 
@@ -29,7 +30,8 @@ class _FixedWidthUnderlinePainter extends BoxPainter {
   void paint(Canvas canvas, Offset offset, ImageConfiguration configuration) {
     assert(configuration.size != null);
     final Rect rect = offset & configuration.size!;
-    final TextDirection textDirection = configuration.textDirection ?? TextDirection.ltr;
+    final TextDirection textDirection =
+        configuration.textDirection ?? TextDirection.ltr;
     final EdgeInsets resolvedInsets = decoration.insets.resolve(textDirection);
     final Rect indicatorRect = resolvedInsets.deflateRect(rect);
 
@@ -38,6 +40,10 @@ class _FixedWidthUnderlinePainter extends BoxPainter {
     final double y = indicatorRect.bottom - decoration.borderSide.width / 2;
 
     final Paint paint = decoration.borderSide.toPaint();
-    canvas.drawLine(Offset(centerX - half, y), Offset(centerX + half, y), paint);
+    canvas.drawLine(
+      Offset(centerX - half, y),
+      Offset(centerX + half, y),
+      paint,
+    );
   }
 }
